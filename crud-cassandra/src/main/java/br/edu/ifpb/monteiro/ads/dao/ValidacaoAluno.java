@@ -1,13 +1,13 @@
 package br.edu.ifpb.monteiro.ads.dao;
 
-import br.edu.ifpb.monteiro.ads.execoes.AlunoInexistenteException;
-import br.edu.ifpb.monteiro.ads.execoes.CpfDuplicadoException;
-import br.edu.ifpb.monteiro.ads.execoes.CpfInvalidoException;
-import br.edu.ifpb.monteiro.ads.execoes.CursoInvalidoException;
-import br.edu.ifpb.monteiro.ads.execoes.MatriculaDuplicadaException;
-import br.edu.ifpb.monteiro.ads.execoes.MatriculaInvalidaException;
-import br.edu.ifpb.monteiro.ads.execoes.NomeInvalidoException;
-import br.edu.ifpb.monteiro.ads.execoes.TelefoneInvalidoException;
+import br.edu.ifpb.monteiro.ads.excecoes.AlunoInexistenteException;
+import br.edu.ifpb.monteiro.ads.excecoes.CpfDuplicadoException;
+import br.edu.ifpb.monteiro.ads.excecoes.CpfInvalidoException;
+import br.edu.ifpb.monteiro.ads.excecoes.CursoInvalidoException;
+import br.edu.ifpb.monteiro.ads.excecoes.MatriculaDuplicadaException;
+import br.edu.ifpb.monteiro.ads.excecoes.MatriculaInvalidaException;
+import br.edu.ifpb.monteiro.ads.excecoes.NomeInvalidoException;
+import br.edu.ifpb.monteiro.ads.excecoes.TelefoneInvalidoException;
 import br.edu.ifpb.monteiro.ads.model.Aluno;
 
 public class ValidacaoAluno {

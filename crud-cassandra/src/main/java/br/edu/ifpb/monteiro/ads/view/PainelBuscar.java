@@ -18,7 +18,7 @@ import javax.swing.JTextField;
 import javax.swing.text.MaskFormatter;
 
 import br.edu.ifpb.monteiro.ads.dao.AlunoDao;
-import br.edu.ifpb.monteiro.ads.execoes.AlunoInexistenteException;
+import br.edu.ifpb.monteiro.ads.excecoes.AlunoInexistenteException;
 import br.edu.ifpb.monteiro.ads.ouvintes.OuvinteBuscar;
 import br.edu.ifpb.monteiro.ads.ouvintes.OuvinteCancelar;
 import br.edu.ifpb.monteiro.ads.ouvintes.OuvinteFocus;
