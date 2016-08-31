@@ -6,13 +6,11 @@ import java.awt.Font;
 
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 
 import br.edu.ifpb.monteiro.ads.dao.AlunoDao;
-import br.edu.ifpb.monteiro.ads.excecoes.AlunoInexistenteException;
 import br.edu.ifpb.monteiro.ads.ouvintes.OuvinteEditar;
 import br.edu.ifpb.monteiro.ads.ouvintes.OuvinteExcluir;
 import br.edu.ifpb.monteiro.ads.ouvintes.OuvintePainelAdd;
@@ -51,11 +49,7 @@ public class PainelTabelas extends JPanel{
 			tabela.getTableHeader().setReorderingAllowed(false);
 			tabela.setFont(new Font("Times New Roman", 0, 20));
 			tabela.setRowHeight(25);
-			try {
-				tabela.setModel(modelAluno = new TableModelAluno(dao.listar()));
-			} catch (AlunoInexistenteException e) {
-				JOptionPane.showMessageDialog(null, e.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE);
-			}
+			tabela.setModel(modelAluno = new TableModelAluno(dao.listar()));
 		}
 		return tabela;
 	}

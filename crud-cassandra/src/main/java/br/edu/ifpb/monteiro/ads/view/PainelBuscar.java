@@ -18,7 +18,6 @@ import javax.swing.JTextField;
 import javax.swing.text.MaskFormatter;
 
 import br.edu.ifpb.monteiro.ads.dao.AlunoDao;
-import br.edu.ifpb.monteiro.ads.excecoes.AlunoInexistenteException;
 import br.edu.ifpb.monteiro.ads.ouvintes.OuvinteBuscar;
 import br.edu.ifpb.monteiro.ads.ouvintes.OuvinteCancelar;
 import br.edu.ifpb.monteiro.ads.ouvintes.OuvinteFocus;
@@ -86,11 +85,7 @@ public class PainelBuscar extends JPanel{
 		tabela.setRowHeight(25);
 		add(new JScrollPane(tabela));
 		janela.setTitle("Buscar Aluno");
-		try {
-			tabela.setModel(new TableModelAluno(dao.listar()));
-		} catch (AlunoInexistenteException e) {
-			e.printStackTrace();
-		}
+		tabela.setModel(new TableModelAluno(dao.listar()));
 	}
 	
 	private void adicionarJLabels(){

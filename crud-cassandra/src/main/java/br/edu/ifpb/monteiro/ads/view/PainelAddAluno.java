@@ -293,9 +293,6 @@ public class PainelAddAluno extends JPanel {
 			} catch (DadoInvalidoException e8) {
 				JOptionPane.showMessageDialog(null, e8.getMessage(), "Erro",
 						JOptionPane.ERROR_MESSAGE);
-			} catch (AlunoInexistenteException e8) {
-				JOptionPane.showMessageDialog(null, e8.getMessage(), "Erro",
-						JOptionPane.ERROR_MESSAGE);
 			}
 		}
 	}
